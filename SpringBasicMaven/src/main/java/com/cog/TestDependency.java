@@ -13,7 +13,21 @@ public class TestDependency {
 	 
 	ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml"); 
 	
-	A a = (A) context.getBean("a");
+	A a = context.getBean(A.class);
+	
+	A a1 = context.getBean(A.class);
+	System.out.println(a.age);
+	System.out.println("Cities list: " + a.cities);
+	
+	if(a == a1){
+		System.out.println("SingleTon objects");
+	}
+	else{
+		System.out.println("Not a singleton");
+	}
+	
+	a.execute();
+	a.execute();
 	a.execute();
 }
 }

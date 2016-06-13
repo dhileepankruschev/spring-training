@@ -7,7 +7,8 @@
 
 
 	<bean id="a" class="com.cog.A">
-		<constructor-arg ref="b"></constructor-arg>
+		<!-- <constructor-arg ref="b"></constructor-arg> -->
+		<property name="b" ref="b"></property>
 	</bean>
 	<bean id="b" class="com.cog.B">
 	</bean>
