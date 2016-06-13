@@ -1,0 +1,8 @@
+package com.cog.repo;
+
+public class AccountRepository {
+
+	public void getAccount(){
+		System.out.println("Getting Account Details");
+	}
+}

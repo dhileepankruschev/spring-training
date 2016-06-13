@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:integration="http://www.springframework.org/schema/integration"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+<context:component-scan base-package="com.cog.service"></context:component-scan>
+
+	<bean id="a" class="com.cog.A">
+		<constructor-arg ref="b"></constructor-arg>
+		<property name="cities">
+			<list>
+				<value>Hyderabad</value>
+				<value>Mumbai</value>
+			</list>
+		</property>
+		<property name="age" value="23"></property>
+	</bean>
+	<bean id="b" class="com.cog.B">
+	
+	</bean>
+
+
+	<!-- <bean id="transferService" class="com.tkhts.service.TransferService"
+		scope="prototype">
+		<constructor-arg ref="accountRepository"></constructor-arg>
+		<property name="accountRepository" ref="accountRepository"></property>
+		<property name="debitAccountName" value="4352"></property>
+	</bean>
+
+	<bean id="accountRepository" class="com.tkhts.dao.AccountRepository" />
+
+ -->
+</beans>

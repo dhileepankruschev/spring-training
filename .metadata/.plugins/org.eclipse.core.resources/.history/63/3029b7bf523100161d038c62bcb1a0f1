@@ -1,0 +1,11 @@
+package com.cog.repo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyDataSource {
+
+	String URL;
+	String user;
+	
+}

@@ -1,0 +1,2 @@
+db.URL=localhost:3453/mydb
+db.user=ravi
