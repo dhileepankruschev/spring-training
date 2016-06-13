@@ -1,0 +1,8 @@
+package com.cog;
+
+public class TestDependency {
+ public static void main(String[] args) {
+	A a = new A();
+	a.execute();
+}
+}

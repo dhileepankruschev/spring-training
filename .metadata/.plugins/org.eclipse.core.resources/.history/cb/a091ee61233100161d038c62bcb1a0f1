@@ -1,0 +1,10 @@
+package com.cog;
+
+public class B {
+
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
