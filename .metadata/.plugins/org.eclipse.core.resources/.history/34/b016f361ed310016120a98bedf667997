@@ -1,0 +1,37 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestCalculator {
+	
+	private Calculator calc;
+
+	@Before
+	public void setup(){
+		calc = new Calculator();
+	}
+
+	@Test
+	public void testSquareof9(){
+		
+		int input = 9;
+		int result = calc.square(input);
+		
+		assertEquals("9 square should be 81", 81, result);
+		
+	}
+	
+	@Test
+	public void testSquareofNegative9(){
+		
+		int input = -9;
+		int result = calc.square(input);
+		
+		assertEquals("-9 square should be 81", 81, result);
+		
+	}
+	
+	
+
+}

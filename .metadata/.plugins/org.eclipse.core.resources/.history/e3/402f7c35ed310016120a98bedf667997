@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestCalculator {
+
+	@Test
+	public void testSquareof9(){
+		Calculator calc = new Calculator();
+		int input = 9;
+		int result = calc.square(input);
+		
+		assertEquals("9 square should be 81", 81, result);
+		
+	}
+
+}
