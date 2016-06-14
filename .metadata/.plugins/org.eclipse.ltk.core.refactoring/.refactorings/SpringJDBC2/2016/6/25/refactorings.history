@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;StudentRepository.java&apos; to &apos;SpringJDBC2/src/main/java/com.cog.repo&apos;&#x0D;&#x0A;- Original project: &apos;SpringJDBC2&apos;&#x0D;&#x0A;- Destination element: &apos;SpringJDBC2/src/main/java/com.cog.repo&apos;&#x0D;&#x0A;- Original element: &apos;StudentRepository.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.cog.repo" element1="/src\/main\/java&lt;{StudentRepository.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" log="/src\/main\/java&lt;&#x09;/src\/main\/java&lt;com.cog.repo" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1465900683792" units="1" version="1.0"/>
+</session>
