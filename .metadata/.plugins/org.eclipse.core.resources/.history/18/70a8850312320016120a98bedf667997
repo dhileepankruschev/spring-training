@@ -28,15 +28,14 @@ public class RestrictFancyAccounts {
 	@Around("execution(* com.cog.TransferService.checkBalance(..))")
 	public void checkPerformance(ProceedingJoinPoint point){
 		System.out.println("Before **** ");
-		long startTime = System.nanoTime();
+		long startTime = System.currentTimeMillis();
 		try {
 			point.proceed();
 		} catch (Throwable e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		long endTime = System.nanoTime();
-		System.out.println("Total time taken in nano seconds " + (endTime - startTime));
+		
 		System.out.println("After **** ");
 	}
 

@@ -7,7 +7,7 @@ public class TransferService {
 	
 	public double checkBalance(long account){
 //		System.out.println("Account number is " +  account);
-		System.out.println("Checking Balance");
+		
 		double balance = account * Math.random();		
 		return balance;
 	}

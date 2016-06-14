@@ -6,8 +6,6 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -24,20 +22,6 @@ public class RestrictFancyAccounts {
 		fancyAccounts.add(11111111l);
 		fancyAccounts.add(22222222l);
 		fancyAccounts.add(33333333l);
-	}
-	@Around("execution(* com.cog.TransferService.checkBalance(..))")
-	public void checkPerformance(ProceedingJoinPoint point){
-		System.out.println("Before **** ");
-		long startTime = System.nanoTime();
-		try {
-			point.proceed();
-		} catch (Throwable e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		long endTime = System.nanoTime();
-		System.out.println("Total time taken in nano seconds " + (endTime - startTime));
-		System.out.println("After **** ");
 	}
 
 	@Before("execution(* com.cog.TransferService.*(..))")

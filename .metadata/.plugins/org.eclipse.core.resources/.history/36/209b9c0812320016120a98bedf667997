@@ -35,8 +35,7 @@ public class RestrictFancyAccounts {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		long endTime = System.nanoTime();
-		System.out.println("Total time taken in nano seconds " + (endTime - startTime));
+		
 		System.out.println("After **** ");
 	}
 

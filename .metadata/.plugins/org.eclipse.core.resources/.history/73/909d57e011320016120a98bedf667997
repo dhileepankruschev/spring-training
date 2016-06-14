@@ -18,7 +18,7 @@ public class TestTransferService {
 	@Test
 	public void testCheckBalance(){
 		
-		int account = 11111112;		
+		int account = 11111111;		
 		double result = service.checkBalance(account);
 		System.out.println("Balance is : " + result);
 
