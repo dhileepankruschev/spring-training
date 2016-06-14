@@ -1,0 +1,17 @@
+package com.cog;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TransferService {
+
+	public boolean fundsTransfer(long account1, long account2, double amount){
+		
+		if(account1 != account2){
+			return true;
+		}
+		
+		return false;
+	}
+		
+}
