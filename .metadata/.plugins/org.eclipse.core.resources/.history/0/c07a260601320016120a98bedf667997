@@ -1,0 +1,42 @@
+package com.cog.aspect;
+
+import java.util.List;
+import javax.annotation.PostConstruct;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class RestrictFancyAccounts {
+	
+	List<String> fancyAccounts;
+	
+	@PostConstruct
+	public void init(){
+		int count = 1;
+		for(long i=11111111l; i<=99999999l;){
+			fancyAccounts.add(String.valueOf(i * count));
+			
+			count++;
+		}
+		System.out.println(fancyAccounts);
+	}
+
+	@Before("execution(* com.cog.TransferService.*(..))")
+	public void doLogging(JoinPoint joinPoint){
+		Object[] args = joinPoint.getArgs();
+		
+		System.out.println("Inputs params passed are: ");
+		for(Object arg : args){
+			if(fancyAccounts.contains(arg)){
+				throw new RuntimeException("Fancy Accounts not allowed");
+			}
+			System.out.println(arg);
+		}
+		
+		System.out.println("Will be run before transfer service");
+	}
+
+}
