@@ -18,5 +18,10 @@ public class MemberService {
 		
 		
 	}
+	
+	
+	public Member fetchMember(String email){
+		return memberRepository.fetchMember(email);
+	}
 
 }

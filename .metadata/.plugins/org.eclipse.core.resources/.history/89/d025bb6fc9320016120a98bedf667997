@@ -1,0 +1,30 @@
+package com.cog.aspect;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class UniqueMember {
+	
+	
+	
+
+	@Before("execution(* com.cog.service.MemberService.addMember(..))")
+	public void doLogging(JoinPoint joinPoint) throws Exception{
+		
+		
+		System.out.println("Will be run before transfer service");
+	}
+
+}

@@ -16,15 +16,30 @@ public class TestMemberService {
 	@Autowired
 	private MemberService memberService;
 
-	/*@Before
-	public void setup(){
-		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml"); 
-		calc = context.getBean(Calculator.class);
-	}*/
-
-	@Test
+//	@Test
 	public void testAddMember(){
-		Member member = new Member("ravi@gmail.com", "kdskd");
+		Member member = new Member("ravi1@gmail.com", "kdskd");
+	
+		boolean result = memberService.addMember(member);
+		System.out.println(result);
+		assertEquals("member should be added", true, result);
+		
+	}
+	
+//	@Test
+	public void testFetchMember(){
+		String email = "ravi@gmail.com";
+	
+		Member result = memberService.fetchMember(email);
+		System.out.println(result);
+		assertEquals("member should be added", "kdskd", result.getPassword());
+		
+	}
+	
+
+	@Test(expected=Exception.class)
+	public void testUniqueUser(){
+		Member member = new Member("ravi1@gmail.com", "kdskd");
 	
 		boolean result = memberService.addMember(member);
 		System.out.println(result);

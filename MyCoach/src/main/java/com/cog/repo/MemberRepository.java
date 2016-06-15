@@ -27,5 +27,19 @@ public class MemberRepository {
 		}
 		return false;
 	}
+	public Member fetchMember(String email) {
+		String SQL = "select * from member where email=?";
+		Member member = jdbcTemplate.queryForObject(SQL, new MemberRowMapper(), email);
+		return member;
+	}
+	
+	public boolean isUniqueMember(Member member){
+		String SQL = "select count(*) from member where email=?";
+		int count = jdbcTemplate.queryForInt(SQL, member.getEmail());
+		if(count>=1){
+			return false;
+		}
+		return true;
+	}
 
 }
