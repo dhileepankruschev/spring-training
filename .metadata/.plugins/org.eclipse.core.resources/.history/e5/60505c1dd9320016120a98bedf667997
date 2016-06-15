@@ -1,0 +1,27 @@
+package com.cog.repo;
+
+import com.cog.entity.Member;
+
+
+public class MemberRepository {
+	
+	public boolean addMember(Member member) {
+		
+		SessionFactory sesssionFactory = new Configuration().configure().buildSessionFactory();
+		
+	// JDBC Template Code
+		/*String SQL = "insert into member (email, password) values (?,?)";
+		int count = jdbcTemplate.update(SQL, member.getEmail(), member.getPassword());
+		if(count>=1){
+			return true;
+		}
+		return false;*/
+		//Hibernate code
+		
+		
+		
+		return false;
+	}
+	
+
+}
