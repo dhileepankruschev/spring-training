@@ -1,0 +1,20 @@
+package com.cog.service;
+
+import org.springframework.stereotype.Service;
+
+import com.cog.entity.Member;
+import com.cog.repo.MemberRepository;
+
+@Service
+public class MemberService {
+	
+	MemberRepository memberRepository;
+	
+	public boolean addMember(Member member){
+		
+		memberRepository.addMember(member);
+		
+		return false;
+	}
+
+}

@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringJDBC2</name>
 	<description>SpringJDBC2</description>
-<properties>
+	<properties>
 		<spring.version>3.2.2.RELEASE</spring.version>
 	</properties>
 	<dependencies>
@@ -43,5 +43,5 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
 		</dependency>
-		</dependencies>
+	</dependencies>
 </project>

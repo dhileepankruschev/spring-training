@@ -1,0 +1,8 @@
+package com.cog.entity;
+
+public class Member {
+	
+	String email;
+	String password;
+
+}

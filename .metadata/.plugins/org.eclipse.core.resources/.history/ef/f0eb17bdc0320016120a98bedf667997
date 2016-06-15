@@ -1,0 +1,14 @@
+package com.cog.service;
+
+import org.springframework.stereotype.Service;
+
+import com.cog.entity.Member;
+
+@Service
+public class MemberService {
+	
+	public boolean addMember(Member member){
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.cog.repo;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.cog.entity.Member;
+
+public class MemberRepository {
+	private DataSource dataSource;
+	private JdbcTemplate jdbcTemplate;
+	@Autowired
+	public MemberRepository(DataSource dataSource) {
+		this.dataSource = dataSource;
+		jdbcTemplate = new JdbcTemplate(dataSource); 
+	}
+	public void addMember(Member member) {
+		
+	// JDBC Template Code
+		String SQL = "insert into member (email, password) values (?,?)";
+		jdbcTemplate.update(SQL, member.getEmail(), member.getPassword());
+		
+	}
+
+}

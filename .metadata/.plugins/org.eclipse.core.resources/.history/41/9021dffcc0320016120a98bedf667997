@@ -1,0 +1,13 @@
+package com.cog.repo;
+
+import com.cog.entity.Member;
+
+public class MemberRepository {
+
+	public void addMember(Member member) {
+		
+	// JDBC Template Code
+		
+	}
+
+}
