@@ -1,0 +1,10 @@
+package com.cog.entity;
+
+@Entity
+public class Employee {
+
+	@Id
+	int id;
+	
+	
+}
