@@ -1624,3 +1624,103 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2016-06-16 10:40:11,356 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-06-16 10:40:11,366 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-06-16 10:40:11,394 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:43:40,232 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:40,332 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:43:40,332 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:40,348 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:43:40,602 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:40,617 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-06-16 10:43:40,633 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:40,633 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:43:41,228 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:41,243 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-06-16 10:43:41,243 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:41,243 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:43:41,428 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:41,452 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-06-16 10:43:41,456 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:43:41,466 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:43:46,737 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-06-16 10:43:52,089 [Worker-16] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:43:52,089 [Worker-16] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B 
+2016-06-16 10:44:26,132 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:44:26,132 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2016-06-16 10:50:21,199 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:50:21,669 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:50:21,669 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-06-16 10:50:21,685 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:50:21,700 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:50:50,042 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:50:50,042 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:50:50,042 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:50:50,058 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:51:31,341 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:51:31,341 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2016-06-16 10:52:07,398 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:52:07,398 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B test
+2016-06-16 10:52:14,768 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:52:14,784 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:52:14,784 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:52:14,784 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:53:34,458 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:53:34,813 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:53:34,829 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:53:34,833 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:53:34,881 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:53:50,980 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2016-06-16 10:54:04,375 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:54:04,375 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2016-06-16 10:54:22,298 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:54:22,298 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:54:22,314 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:54:22,314 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:55:00,341 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:55:00,341 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:55:00,357 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:55:00,357 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:56:51,752 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-06-16 10:56:51,912 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:56:52,236 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JPADemo/src/main/java
+2016-06-16 10:56:52,236 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JPADemo/src/main/resources
+2016-06-16 10:56:52,236 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JPADemo/src/test/java
+2016-06-16 10:56:52,236 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JPADemo/src/test/resources
+2016-06-16 10:56:55,724 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-06-16 10:56:59,537 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:56:59,925 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:56:59,935 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-06-16 10:56:59,946 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:56:59,954 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:58:06,003 [Worker-18] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-06-16 10:58:06,150 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:58:06,624 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JPADemo/src/main/java
+2016-06-16 10:58:06,625 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JPADemo/src/main/resources
+2016-06-16 10:58:06,627 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JPADemo/src/test/java
+2016-06-16 10:58:06,628 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /JPADemo/src/test/resources
+2016-06-16 10:58:06,965 [Worker-18] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-06-16 10:58:07,838 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:58:08,220 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:58:08,231 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-06-16 10:58:08,243 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:58:08,252 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-06-16 10:58:15,475 [Worker-30] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:58:15,475 [Worker-30] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2016-06-16 10:58:23,727 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:58:23,742 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:58:23,742 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:58:23,742 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:59:15,061 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:59:15,406 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:59:15,421 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:59:15,421 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:59:15,438 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:59:26,759 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JPADemo:JPADemo:0.0.1-SNAPSHOT @ D:\Google Drive\workspaces\Spring\cogwksp\JPADemo\pom.xml.
+2016-06-16 10:59:27,023 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:59:27,023 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:59:27,041 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:59:27,044 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:59:35,621 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Google Drive\workspaces\Spring\cogwksp\JPADemo
+2016-06-16 10:59:35,621 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2016-06-16 10:59:43,957 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:59:43,973 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-06-16 10:59:43,973 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-16 10:59:43,993 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
