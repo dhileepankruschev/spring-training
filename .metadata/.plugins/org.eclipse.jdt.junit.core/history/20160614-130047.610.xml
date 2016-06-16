@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTransferService" project="SpringDay2" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="TestTransferService" time="2.157">
-    <testcase name="testFundsTransferSameAccounts" classname="TestTransferService" time="2.15"/>
-    <testcase name="testCheckBalance" classname="TestTransferService" time="0.003"/>
-    <testcase name="testFundsTransfer" classname="TestTransferService" time="0.004"/>
-  </testsuite>
-</testrun>

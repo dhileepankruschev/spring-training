@@ -23,6 +23,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Google Drive\workspaces\Spring\cogwksp\HibernateDemo\lib"/>
 			<item value="D:\Google Drive\workspaces\Spring\cogwksp\SpringBasic"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -53,12 +54,24 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="HibernateMavenDemo"/>
+			<item value="MyCoach"/>
+			<item value="SpringJDBC2"/>
+			<item value="SpringDay2"/>
 			<item value="SpringBasicMaven"/>
 		</list>
 		<list key="name">
+			<item value="HibernateMavenDemo"/>
+			<item value="MyCoach"/>
+			<item value="SpringJDBC2"/>
+			<item value="SpringDay2"/>
 			<item value="SpringBasicMaven"/>
 		</list>
 		<list key="artifactId">
+			<item value="HibernateMavenDemo"/>
+			<item value="MyCoach"/>
+			<item value="SpringJDBC2"/>
+			<item value="SpringDay2"/>
 			<item value="SpringBasicMaven"/>
 		</list>
 		<list key="projectNameTemplate">
