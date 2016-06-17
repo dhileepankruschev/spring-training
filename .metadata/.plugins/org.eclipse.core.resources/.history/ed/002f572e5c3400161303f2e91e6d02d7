@@ -56,7 +56,6 @@ public class MappingTest {
 		room.setRoomsLeft(2);*/
 		
 		HotelRoom room = em.find(HotelRoom.class, 1);
-		room.setRoomsLeft(room.getRoomsLeft() - 1);
 		
 		transaction.commit();
 		em.close();

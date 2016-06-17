@@ -8,8 +8,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import com.cog.repo.HotelRoom;
-
 
 public class MappingTest {
 
@@ -39,27 +37,7 @@ public class MappingTest {
 		emp.setAddresses(addresses);
 //		repository.addAddress(address1);
 //		repository.addEmployee(emp);
-//		repository.findEmployee(1l);
-		
-		
-		
-		repository.bookRoom();
-	}
-	
-	public void bookRoom() {
-		EntityManager em = emf.createEntityManager();
-		// Session session = sesssionFactory.openSession();
-		EntityTransaction transaction = em.getTransaction();
-		transaction.begin();
-		
-		/*HotelRoom room = new HotelRoom();
-		room.setRoomsLeft(2);*/
-		
-		HotelRoom room = em.find(HotelRoom.class, 1);
-		room.setRoomsLeft(room.getRoomsLeft() - 1);
-		
-		transaction.commit();
-		em.close();
+		repository.findEmployee(1l);
 	}
 	
 	public void findEmployee(long id) {
@@ -72,7 +50,7 @@ public class MappingTest {
 		Employee employee = em.find(Employee.class, id);
 		System.out.println(employee.getName());
 		
-//		System.out.println(employee.getAddresses()); 
+		employee.getAddresses();
 		
 		/*employee.setName("Kumar");
 		Set<Address> addresses = employee.addresses;
