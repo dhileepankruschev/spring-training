@@ -1,0 +1,45 @@
+package com.cog.mappings.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Address {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="add_id")
+	private Long id;
+	private String location;
+	private Employee employee;
+	
+	public Employee getEmployee() {
+		return employee;
+	}
+
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", location=" + location + "]";
+	}
+	
+	
+	
+	
+
+}

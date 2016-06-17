@@ -22,7 +22,7 @@ public class Employee {
 	
 	private String name;
 	
-	@OneToMany(cascade=CascadeType.ALL)
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="employee")
 	Set<Address> addresses;
 
 	public String getName() {
@@ -40,5 +40,13 @@ public class Employee {
 	public void setAddresses(Set<Address> addresses) {
 		this.addresses = addresses;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", addresses="
+				+ addresses + "]";
+	}
+	
+	
 
 }
