@@ -1,0 +1,12 @@
+package com.cog.entity;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Item {
+	
+	private Long id;
+	
+	private Set<Bid> bids = new HashSet<>();
+
+}

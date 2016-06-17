@@ -1,0 +1,17 @@
+package com.cog.entity;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Id;
+
+public class Item {
+	
+	@Id
+	private Long id;
+	
+	private String name;
+	
+	private Set<Bid> bids = new HashSet<>();
+
+}
