@@ -1,9 +1,0 @@
-package com.cog.service;
-
-public class TransferService {
-	
-	public void fundsTransfer(int account1, int account2, double amount){
-		
-	}
-
-}

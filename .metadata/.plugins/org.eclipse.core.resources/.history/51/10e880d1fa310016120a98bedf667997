@@ -1,5 +1,0 @@
-package com.cog.aspect;
-
-public class LoggingAspect {
-
-}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -36,10 +37,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="jpatest"/>
 		</list>
 		<list key="package">
+			<item value="foo"/>
 		</list>
 		<list key="artifactId">
+			<item value="jpatest"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -54,25 +58,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="HibernateMavenDemo"/>
-			<item value="MyCoach"/>
-			<item value="SpringJDBC2"/>
-			<item value="SpringDay2"/>
-			<item value="SpringBasicMaven"/>
 		</list>
 		<list key="name">
-			<item value="HibernateMavenDemo"/>
-			<item value="MyCoach"/>
-			<item value="SpringJDBC2"/>
-			<item value="SpringDay2"/>
-			<item value="SpringBasicMaven"/>
 		</list>
 		<list key="artifactId">
-			<item value="HibernateMavenDemo"/>
-			<item value="MyCoach"/>
-			<item value="SpringJDBC2"/>
-			<item value="SpringDay2"/>
-			<item value="SpringBasicMaven"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
