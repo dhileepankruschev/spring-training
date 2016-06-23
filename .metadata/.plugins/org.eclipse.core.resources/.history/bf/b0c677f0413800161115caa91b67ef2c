@@ -1,0 +1,10 @@
+package com.cog.repo;
+
+public class MemberRepository {
+	
+	public void addMember(Member member)
+	{
+		
+	}
+
+}

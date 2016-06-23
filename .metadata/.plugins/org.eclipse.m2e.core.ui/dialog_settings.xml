@@ -24,6 +24,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Google Drive\workspaces\Spring\cogwksp\JPAWithoutMaven"/>
 			<item value="D:\Google Drive\workspaces\Spring\cogwksp\HibernateDemo\lib"/>
 			<item value="D:\Google Drive\workspaces\Spring\cogwksp\SpringBasic"/>
 		</list>
@@ -37,13 +38,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
-			<item value="jpatest"/>
 		</list>
 		<list key="package">
-			<item value="foo"/>
 		</list>
 		<list key="artifactId">
-			<item value="jpatest"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -58,10 +56,16 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="SpringWebMVC"/>
+			<item value="SpringJPA"/>
 		</list>
 		<list key="name">
+			<item value="SpringWebMVC"/>
+			<item value="SpringJPA"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringWebMVC"/>
+			<item value="SpringJPA"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

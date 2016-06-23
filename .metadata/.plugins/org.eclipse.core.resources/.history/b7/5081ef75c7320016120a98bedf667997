@@ -1,9 +1,0 @@
-package com.cog.repo;
-
-import org.springframework.jdbc.core.RowMapper;
-
-import com.cog.entity.Member;
-
-public class MemberRowMapper implements RowMapper<Member> {
-
-}

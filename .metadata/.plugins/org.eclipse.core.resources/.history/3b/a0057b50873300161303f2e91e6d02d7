@@ -1,8 +1,0 @@
-package com.cog.entity;
-
-public class Address {
-
-	int houseNumber;
-	String locality;
-	String city;
-}

@@ -1,0 +1,19 @@
+package com.cog.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class MemberController {
+	
+	@RequestMapping(value="/add", method=RequestMethod.POST)
+	public String addMember(@RequestParam("membername") String name, Model model){
+		System.out.println("Membername is : " + name);
+		model.addAttribute("m1", name);
+		return "member";
+	}
+
+}
