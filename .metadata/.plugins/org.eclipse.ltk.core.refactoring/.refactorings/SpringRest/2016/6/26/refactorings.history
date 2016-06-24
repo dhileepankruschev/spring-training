@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.cog.user.controller.Hello.java&apos; to &apos;Home.java&apos;&#x0D;&#x0A;- Original project: &apos;SpringRest&apos;&#x0D;&#x0A;- Original element: &apos;com.cog.user.controller.Hello.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cog.user.controller.Home.java&apos;" description="Rename compilation unit &apos;Hello.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;com.cog.user.controller{Hello.java" name="Home.java" references="false" stamp="1466746652765" version="1.0"/>
+</session>
