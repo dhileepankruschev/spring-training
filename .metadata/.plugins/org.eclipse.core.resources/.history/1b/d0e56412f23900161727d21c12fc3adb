@@ -29,7 +29,11 @@ public class UserRestController {
 		List<User> users = userService.findAllUsers();
 		if (users.isEmpty()) {
 			return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);// You
-																			// many																	// HttpStatus.NOT_FOUND
+																			// many
+																			// decide
+																			// to
+																			// return
+																			// HttpStatus.NOT_FOUND
 		}
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
