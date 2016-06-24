@@ -1,0 +1,8 @@
+package com.cog.user.configuration;
+
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages = "com.cog")
+public class UserConfiguration {
+
+}

@@ -1,0 +1,26 @@
+package com.cog.user.configuration;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+public class UserInitializer extends AbstractAnnotationConfigDispatcherServletInitializer { {
+
+}
+
+@Override
+protected Class<?>[] getRootConfigClasses() {
+	// TODO Auto-generated method stub
+	return new Class[] { UserConfiguration.class };
+}
+
+@Override
+protected Class<?>[] getServletConfigClasses() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+protected String[] getServletMappings() {
+	// TODO Auto-generated method stub
+	return new String[] { "/" };
+}
+}

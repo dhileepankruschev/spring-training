@@ -1,0 +1,22 @@
+package com.cog.user.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cog.user.entity.User;
+
+
+@RestController
+public class UserRestController {
+	
+	@RequestMapping(path="/user/", method=RequestMethod.GET)
+	public ResponseEntity<User> getUser(){
+		User user = new User("ravi@gmail.com", "ravi");
+		System.out.println(user);
+		return new ResponseEntity<User>(user, HttpStatus.OK);
+	}
+
+}

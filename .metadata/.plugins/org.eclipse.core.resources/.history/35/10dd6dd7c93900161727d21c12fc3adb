@@ -1,0 +1,5 @@
+package com.cog.user.configuration;
+
+public class UserConfiguration {
+
+}

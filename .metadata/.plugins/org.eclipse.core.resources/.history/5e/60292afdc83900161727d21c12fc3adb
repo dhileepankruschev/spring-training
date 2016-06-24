@@ -1,0 +1,8 @@
+package com.cog.user.entity;
+
+public class User {
+	
+	String email;
+	
+
+}
