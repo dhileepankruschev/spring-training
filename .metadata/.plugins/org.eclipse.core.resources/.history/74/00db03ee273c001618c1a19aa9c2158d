@@ -1,0 +1,15 @@
+package com.cog.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cog.entity.Member;
+import com.cog.repo.MemberRepository;
+
+public class MemberService {
+	@Autowired
+	MemberRepository repository;
+	
+	public void addMember(Member member){
+		repository.addMember(member);
+	}
+}

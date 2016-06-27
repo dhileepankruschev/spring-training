@@ -1,9 +1,0 @@
-package com.cog.mappings.entity;
-
-public class Address {
-	
-	private Long id;
-	
-	private String location;
-
-}

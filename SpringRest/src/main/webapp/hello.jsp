@@ -9,7 +9,7 @@
 <body>
 Testing
 
-<h2>Result: ${message}</h2>
+<h2>Result: ${msg}</h2>
 
 
 Testing End

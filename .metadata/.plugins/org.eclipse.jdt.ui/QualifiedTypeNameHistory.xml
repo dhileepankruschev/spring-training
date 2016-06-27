@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="com.cog.repo.MyDataSource"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
@@ -24,9 +23,6 @@
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
 <fullyQualifiedTypeName name="javax.persistence.Version"/>
-<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
 <fullyQualifiedTypeName name="com.cog.repo.MemberRepository"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
@@ -34,8 +30,19 @@
 <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
 <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="com.cog.entity.Member"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="com.cog.user.entity.User"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="org.springframework.web.util.UriComponentsBuilder"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
 </qualifiedTypeNameHistroy>

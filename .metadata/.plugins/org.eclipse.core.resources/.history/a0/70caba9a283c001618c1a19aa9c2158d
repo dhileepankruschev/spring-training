@@ -1,0 +1,32 @@
+package com.cog.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.cog.service.MemberService;
+
+@Controller
+@RequestMapping(value="/member")
+public class MemberController {
+	
+	@Autowired
+	MemberService service;
+	
+	@RequestMapping(value="/add", method=RequestMethod.GET)
+	public String addMember(@RequestParam String name, ){
+		
+		boolean result = service.addMember(member);
+		String message;
+		if(result){
+			message = "Registration Successful";
+		}
+		else{
+			message = "Registration Failure";
+		}
+		return "member.jsp";
+	}
+
+}

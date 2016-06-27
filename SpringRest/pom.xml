@@ -3,12 +3,13 @@
   <groupId>SpringRest</groupId>
   <artifactId>SpringRest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  	<packaging>war</packaging>
+    <packaging>war</packaging>
   <name>SpringRest</name>
   
   <properties>
 		<springframework.version>4.2.0.RELEASE</springframework.version>
 		<jackson.version>2.5.3</jackson.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>

@@ -1,0 +1,9 @@
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+
+public class MemberRepository {
+
+	@PersistenceContext
+	EntityManager em;
+}

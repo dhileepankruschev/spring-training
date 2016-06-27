@@ -1,0 +1,12 @@
+package com.cog.service;
+
+import com.cog.entity.Member;
+
+public class MemberService {
+	
+	MemberRepository repository;
+	
+	public void addMember(Member member){
+		em.persist(member);
+	}
+}
