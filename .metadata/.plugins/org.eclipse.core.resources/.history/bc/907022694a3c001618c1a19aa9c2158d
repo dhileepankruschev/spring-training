@@ -1,0 +1,24 @@
+package com.cog.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cog.entity.Member;
+import com.cog.repo.MemberRepository;
+
+@Service
+public class MemberService {
+	@Autowired
+	MemberRepository repository;
+	
+	public boolean addMember(Member member){
+		try {
+			repository.addMember(member);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
+	}
+}

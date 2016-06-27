@@ -1,0 +1,47 @@
+package com.cog;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.cog.entity.Member;
+import com.cog.repo.MemberRepository;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration
+public class TestMemberRepo {
+	
+	@Autowired
+	private MemberService service;
+
+	
+
+//	@Test
+	public void testAddMember(){
+		Member member = new Member("Ravi", 3434);
+		service.addMember(member);
+		System.out.println("Test Finished");
+	}
+	
+//	@Test
+	public void testFindMember(){
+		
+		Member member = repo.findMember(1l);
+		System.out.println(member);
+		assertEquals("Ravi", member.getName());
+	}
+	
+	@Test
+	public void testFindMemberByName(){
+		
+		Member member = repo.findMemberByName("Ravi");
+		System.out.println(member);
+		assertEquals("Ravi", member.getName());
+	}
+
+	
+
+}

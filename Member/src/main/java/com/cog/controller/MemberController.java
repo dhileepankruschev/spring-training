@@ -1,5 +1,7 @@
 package com.cog.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,6 +34,16 @@ public class MemberController {
 		
 		model.addAttribute("msg", message);
 		return "member.jsp";
+	}
+	
+	@RequestMapping(value="/findAll", method=RequestMethod.GET)
+	public String findMembers(Model model){
+		
+//		find all the employees an set into model
+		List<Member> members = service.findMembers();
+		model.addAttribute("members", members);
+		
+		return "list.jsp";
 	}
 
 }

@@ -1,0 +1,29 @@
+package com.cog.user.configuration;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.cog.entity.Member;
+import com.cog.service.MemberService;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(loader=UserConfiguration.class)
+public class TestMemberRepo {
+	
+	@Autowired
+	private MemberService service;
+
+	
+
+	@Test
+	public void testAddMember(){
+		Member member = new Member("Ravi", 3434);
+		service.addMember(member);
+		System.out.println("Test Finished");
+	}
+	
+
+
+}
