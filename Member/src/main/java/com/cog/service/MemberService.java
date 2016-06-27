@@ -1,5 +1,7 @@
 package com.cog.service;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,16 @@ public class MemberService {
 
 	public List<Member> findMembers() {
 		// TODO Auto-generated method stub
-		return repository.findMembers();
+		List<Member> members = repository.findMembers();
+		Collections.sort(members, new Comparator<Member>(){
+
+			public int compare(Member o1, Member o2) {
+				// TODO Auto-generated method stub
+				return o1.getSalary().compareTo(o2.getSalary());
+			}
+			
+		});
+		
+		return members;
 	}
 }

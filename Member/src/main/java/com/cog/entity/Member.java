@@ -14,7 +14,7 @@ public class Member {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String name;
-	private double salary;
+	private Double salary;
 	
 	@Override
 	public String toString() {
@@ -40,10 +40,10 @@ public class Member {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getSalary() {
+	public Double getSalary() {
 		return salary;
 	}
-	public void setSalary(double salary) {
+	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
 
