@@ -4,7 +4,7 @@
 	<groupId>Member</groupId>
 	<artifactId>Member</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	 <packaging>war</packaging>
+	<packaging>war</packaging>
 	<name>Member</name>
 	<properties>
 		<springframework.version>4.2.0.RELEASE</springframework.version>
@@ -58,5 +58,7 @@
 			<version>5.1.30</version>
 			<scope>runtime</scope>
 		</dependency>
+
+
 	</dependencies>
 </project>

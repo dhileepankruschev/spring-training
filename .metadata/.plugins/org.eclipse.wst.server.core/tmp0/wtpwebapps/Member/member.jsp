@@ -8,8 +8,10 @@
 </head>
 <body>
 ${msg}
+<br>
+${m.name }
 
-<form method="POST" action="add">
+<form method="POST" action="adduser">
 <input type=text name="name" placeholder="Enter name"/>
 <input type=text name="salary" placeholder="Enter salary"/>
 <input type=submit value="Register Member"/>

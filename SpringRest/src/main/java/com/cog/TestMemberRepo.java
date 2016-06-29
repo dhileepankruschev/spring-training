@@ -25,22 +25,5 @@ public class TestMemberRepo {
 		System.out.println("Test Finished");
 	}
 	
-//	@Test
-	public void testFindMember(){
-		
-		Member member = repo.findMember(1l);
-		System.out.println(member);
-		assertEquals("Ravi", member.getName());
-	}
-	
-	@Test
-	public void testFindMemberByName(){
-		
-		Member member = repo.findMemberByName("Ravi");
-		System.out.println(member);
-		assertEquals("Ravi", member.getName());
-	}
-
-	
 
 }

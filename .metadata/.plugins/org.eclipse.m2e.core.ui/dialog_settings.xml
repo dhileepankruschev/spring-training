@@ -56,16 +56,22 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="SpringSoap"/>
+			<item value="Member"/>
 			<item value="SpringRest"/>
 			<item value="SpringWebMVC"/>
 			<item value="SpringJPA"/>
 		</list>
 		<list key="name">
+			<item value="SpringSoap"/>
+			<item value="Member"/>
 			<item value="SpringRest"/>
 			<item value="SpringWebMVC"/>
 			<item value="SpringJPA"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringSoap"/>
+			<item value="Member"/>
 			<item value="SpringRest"/>
 			<item value="SpringWebMVC"/>
 			<item value="SpringJPA"/>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestMemberRepo (1)" project="Member" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.cog.user.configuration.TestMemberRepo" time="0.247">
-    <testcase name="testAddMember" classname="com.cog.user.configuration.TestMemberRepo" time="0.247"/>
-  </testsuite>
-</testrun>
