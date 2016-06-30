@@ -1,0 +1,61 @@
+Dispatcher
+	default, uses requestDispatcher forward
+	
+chain
+	<struts>
+	<package name="default" extends="struts-default">
+	<!-- one action configured -->
+	<action name="DispatcherAction" class="techmyguru.results.DispatcherAction">
+	<result name="success" type="dispatcher">/DispatcherResult.jsp</result>
+	</action>
+	<!-- chain action is configured here and linked with above action -->
+	<action name="ChainAction" class="techmyguru.results.ChainAction">
+	<result name="success" type="chain">DispatcherAction</result>
+	</action>
+	</package>
+	</struts>
+
+FreeMarker
+	<result name="success" type="freemarker">Success.ftl</result>
+	
+Redirect
+	It works based on HttpServletResponse.sendRedirect() method
+	<result name="success" type="redirect">/RedirectResult.jsp</result>
+	
+RedirectAction
+	It is same as redirect result type. But the target result must be an action either in same application or in the other application
+	<result name="success" type="redirectAction">DispatcherAction</result>
+	
+Stream
+	It is used to Streaming the InputStream back to the client and client can download the content in the specified formmat.
+	needs some more jars to be attached
+		itext-pdfa-5.3.5.jar
+		itext-xtra-5.3.5.jar
+		itextpdf-5.3.5.jar
+		
+	<result name="success" type="stream">
+		<param name="contentType">image/jpeg</param>
+		<param name="inputName">imageStream</param>
+		<param name="contentDisposition">attachment;filename="document.pdf"</param>
+		<param name="bufferSize">1024</param>
+	</result>
+	
+Velocity
+		It is usedn to integration of Velocity template in Struts2 application
+		<result name="success" type="velocity">
+			<param name="location">Success.vm</param>
+		</result>
+		
+XSL
+	It is used to integration of XML/XSLT in view page
+	
+PlainText
+	It is used to display raw content of a file in the browser.
+		<action name="displayJspRawContent" >
+		  <result type="plainText">
+			 <param name="location">/Success.jsp</param>
+			 <param name="charSet">UTF-8</param>
+		  </result>
+		</action>
+
+

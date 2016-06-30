@@ -13,6 +13,8 @@ public class Member {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
+	@NotNull
+	@Size(min=5)
 	private String name;
 	private Double salary;
 	

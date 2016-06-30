@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<!-- alias -->
+		<action name="EmployeeAlias" class="io.domshom.struts2.alias.EmployeeAlias">
+			<param name="aliases">
+				#{
+				'code' : 'empCode',
+				'name' : 'empName',
+				'city' : 'empCity',
+				'salary' : 'empSalary'
+				}
+			</param>
+			<result name="success">/alias/EmployeeAlias.jsp</result>
+		</action>
+
+		<!-- chain -->
+ 		<action name="Chaining" class="io.domshom.struts2.chain.EmployeePersonal">
+			<result name="success" type="chain">EmployeeProfessional</result>
+		</action>
+		<action name="EmployeeProfessional" class="io.domshom.struts2.chain.EmployeeProfessional">
+			<result name="success">/chain/EmployeeSuccess.jsp</result>
+		</action>
+
+
+		<!-- cookie -->
+<!--  		<action name="CreateCookieAction" class="io.domshom.struts2.cookie.CreateCookieAction">
+			<result>/cookie/index.jsp</result>
+		</action>
+		<action name="CookieAwareDemo" class="io.domshom.struts2.cookie.CookieAwareDemo">
+			<interceptor-ref name="cookie">
+				<param name="cookiesName">*</param>
+				<param name="cookiesValue">*</param>
+			</interceptor-ref>
+			<result>/cookie/index.jsp</result>
+		</action>
+ -->
+
+		<!-- debug -->
+ 		<action name="EmpDebugAction" class="io.domshom.struts2.debug.EmpDebugAction">
+			<interceptor-ref name="debugging" />
+			<result name="success">/debug/Success.jsp</result>
+		</action>
+
+
+		<!-- execute and wait -->
+ 		<action name="Login" class="io.domshom.struts2.execute_and_wait.LoginAction">
+			<interceptor-ref name="execAndWait"></interceptor-ref>
+
+			<result name="input">/ExecuteAndWait/index.jsp</result>
+			<result name="wait">/ExecuteAndWait/wait.jsp</result>
+			<result name="success">/ExecuteAndWait/success.jsp</result>
+		</action>
+
+		<!-- timer -->
+ 		<action name="Sleep" class="io.domshom.struts2.timer.LongProcessAction">
+			<interceptor-ref name="timer" />
+
+			<result name="input">/timer/index.jsp</result>
+			<result name="success">/timer/success.jsp</result>
+		</action>
+
+
+		<!-- params -->
+ 		<action name="paramsdemo" class="io.domshom.struts2.params.EmployeeAction">
+			<interceptor-ref name="timer" />
+
+			<result name="success">/params/success.jsp</result>
+		</action>
+
+	</package>
+</struts>

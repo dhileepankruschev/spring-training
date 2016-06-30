@@ -1,0 +1,22 @@
+Create a dynamic project
+Copy following jars from struts 2 lib folder to our project's WEB-INF\lib folder
+	commons-fileupload-1.3.1.jar
+	commons-io-2.2.jar
+	commons-lang-2.4.jar
+	commons-lang3-3.2.jar
+	commons-logging-1.1.3.jar
+	commons-logging-api-1.1.jar
+	freemarker-2.3.19.jar
+	javassist-3.11.0.GA.jar
+	ognl-3.0.6.1.jar
+	struts2-core-2.3.20.3.jar
+	xwork-core-2.3.20.3.jar
+Create Action Class with setter and getter
+Create views
+
+Create WebContent/WEB-INF/classes/struts.xml
+Add StrutsPrepareAndExecuteFilter in web.xml
+
+Enable Detailed Log:
+	WebContent/WEB-INF/classes/logging.properties
+Execute the Application

@@ -1,0 +1,21 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+    "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+
+	<field name="username">
+	    <field-validator type="requiredstring">
+	    <message>Username can not be blank</message>
+	    </field-validator>
+	</field>
+
+   <field name="age">
+     <field-validator type="int">
+         <param name="min">18</param>
+         <param name="max">70</param>
+         <message>
+            Age must be in between ${min} and ${max}
+         </message>
+      </field-validator>
+   </field>
+</validators>

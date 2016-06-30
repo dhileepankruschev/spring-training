@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+	<action name="login">
+         <result>views/required/index.jsp</result>
+	</action>
+      <action name="userLogin" class="io.domshom.struts2.validation.required.UserAction" method="execute">
+         <result name="input">views/required/index.jsp</result>
+         <result name="error">views/required/index.jsp</result>
+         <result name="success">views/required/success.jsp</result>
+      </action>
+
+   </package>
+   
+    <package name="user" namespace="/user" extends="struts-default">  
+	   	<action name="register">
+	         <result>fulldemo/register.jsp</result>
+		</action>
+	   
+		<action name="registeraction" class="io.domshom.struts2.validation.fullDemo.RegisterAction">  
+	         <result name="input">fulldemo/register.jsp</result>
+	         <result name="error">fulldemo/error.jsp</result>
+	         <result name="success">fulldemo/success.jsp</result>
+		</action>  
+	</package>  
+</struts>

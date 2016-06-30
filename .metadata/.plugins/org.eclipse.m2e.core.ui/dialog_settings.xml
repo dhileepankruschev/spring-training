@@ -56,6 +56,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="SpringSoap2"/>
 			<item value="SpringSoap"/>
 			<item value="Member"/>
 			<item value="SpringRest"/>
@@ -63,6 +64,7 @@
 			<item value="SpringJPA"/>
 		</list>
 		<list key="name">
+			<item value="SpringSoap2"/>
 			<item value="SpringSoap"/>
 			<item value="Member"/>
 			<item value="SpringRest"/>
@@ -70,6 +72,7 @@
 			<item value="SpringJPA"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringSoap2"/>
 			<item value="SpringSoap"/>
 			<item value="Member"/>
 			<item value="SpringRest"/>

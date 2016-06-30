@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="devMode" value="true" />
+	<package name="default" extends="struts-default">
+		<interceptors>
+		<!-- prepare interceptors -->
+			<interceptor name="Interceptor1" class="io.domshom.struts2.custom.MyInterceptor1" />
+			<interceptor name="Interceptor2" class="io.domshom.struts2.custom.MyInterceptor2" />
+			
+			<!-- creating of already available interceptors -->
+			<interceptor-stack name="UserStack">
+				<interceptor-ref name="Interceptor2" />
+				<interceptor-ref name="Interceptor1" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="EmployeeAction1" class="io.domshom.struts2.custom.EmployeeAction1">
+		<!-- creating interceptor1 -->
+			<interceptor-ref name="Interceptor1" />
+			<result>/WEB-INF/views/Success.jsp</result>
+		</action>
+		<!-- creating interceptor2 -->
+		<action name="EmployeeAction2" class="io.domshom.struts2.custom.EmployeeAction1">
+			<interceptor-ref name="Interceptor1" />
+			<interceptor-ref name="Interceptor2" />
+			<result>/WEB-INF/views/Success.jsp</result>
+		</action>
+		<action name="EmployeeAction3" class="io.domshom.struts2.custom.EmployeeAction1">
+		<!-- already created -->
+			<interceptor-ref name="UserStack" />
+			<result>/WEB-INF/views/Success.jsp</result>
+		</action>
+	</package>
+</struts>	

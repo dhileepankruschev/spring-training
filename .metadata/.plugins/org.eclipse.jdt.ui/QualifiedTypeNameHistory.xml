@@ -52,4 +52,10 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="com.cog.service.MemberService"/>
 <fullyQualifiedTypeName name="com.cog.entity.Member"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+<fullyQualifiedTypeName name="org.springmodules.validation.bean.conf.loader.annotation.handler.NotNull"/>
+<fullyQualifiedTypeName name="org.springmodules.validation.bean.conf.loader.annotation.handler.Size"/>
+<fullyQualifiedTypeName name="com.tkhts.entity.User"/>
 </qualifiedTypeNameHistroy>

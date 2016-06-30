@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+
+   <constant name="struts.devMode" value="true" />
+ 	
+   <package name="default" namespace="/ui_tags" extends="struts-default">
+   <!-- textbox -->
+	<action name="textbox">
+		<result>views/textbox/index.jsp</result>
+	</action>
+	<action name="showname" class="io.domshom.struts2.ui.textbox.TextboxAction">
+		<result name="success">views/textbox/welcome.jsp</result>
+		<result name="input">views/textbox/index.jsp</result>
+		<result name="error">views/textbox/index.jsp</result>
+	</action>
+   <!-- textbox -->
+	
+	<!-- radio_checkbox dropdown-->
+	<action name="radio_checkbox" 
+         class="io.domshom.struts2.ui.radio_checkbox.RadioCheckboxAction" method="display">
+		<result name="none">views/radio_checkbox/button.jsp</result>
+    </action>
+		
+    <action name="radio_check" class="io.domshom.struts2.ui.radio_checkbox.RadioCheckboxAction">
+		<result name="success">views/radio_checkbox/result.jsp</result>
+    </action>
+	<!-- radio_checkbox dropdown-->
+    
+    <!-- combo box -->
+    <action name="combo" class="io.domshom.struts2.ui.combo.ComboboxAction" method="display">
+    	<result name="none">views/combobox/combobox.jsp</result>
+    </action>
+    <action name="comboAction" class="io.domshom.struts2.ui.combo.ComboboxAction">
+    	<result name="success">views/combobox/result.jsp</result>
+    </action>
+    <!-- combo box -->
+    
+    
+    <!-- file -->
+    <action name="file">
+	    <result>views/file/upload.jsp</result>
+	</action>
+	
+	<action name="fileAction" class="io.domshom.struts2.ui.file.FileAction">
+	    <interceptor-ref name="exception"/>
+            <interceptor-ref name="i18n"/>
+            <interceptor-ref name="fileUpload">
+       		<param name="allowedTypes">text/plain</param>
+       		<!-- bytes -->
+       		<param name="maximumSize">20480</param>
+  	    </interceptor-ref> 
+            <interceptor-ref name="params">
+                <param name="excludeParams">dojo\..*,^struts\..*</param>
+            </interceptor-ref>
+            <interceptor-ref name="validation">
+                <param name="excludeMethods">input,back,cancel,browse</param>
+            </interceptor-ref>
+            <interceptor-ref name="workflow">
+                <param name="excludeMethods">input,back,cancel,browse</param>
+            </interceptor-ref>
+    
+	    <result name="success">views/file/result.jsp</result>
+	    <result name="input">views/file/upload.jsp</result>
+			
+	</action>
+	
+	
+	<!-- download -->
+	<action name="downloadFile" class="io.domshom.struts2.ui.file.FileAction" method="download">
+	<result name="success">views/file/result2.jsp</result>
+	<result name="success" type="stream">
+		<param name="contentType">application/octet-stream</param>
+		<param name="inputName">fileInputStream</param>
+		<param name="contentDisposition">attachment;filename="NewName.txt"</param>
+		<param name="bufferSize">1024</param>
+	</result>
+	</action>
+	
+	
+    <!-- multiple file -->
+    
+    <!-- multiple file upload -->
+    <!-- <action name="file">
+	    <result>views/file/upload.jsp</result>
+	</action> -->
+    
+    
+	<action name="multipleFileAction" class="io.domshom.struts2.ui.file.FileAction" method="multipleFileUpload">
+		 <result name="success">views/file/result2.jsp</result>
+	</action>
+    <!-- multiple file upload -->
+	
+   </package>
+	
+</struts>

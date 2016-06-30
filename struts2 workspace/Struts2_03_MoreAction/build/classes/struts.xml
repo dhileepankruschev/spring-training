@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="extends" class="io.domshom.struts2.EmployeeAction_Extends">
+			<result name="success">views/EmployeeSuccess.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+		<action name="implements" class="io.domshom.struts2.EmployeeAction_Implements"
+			method="execute">
+			<result name="success">views/EmployeeSuccess.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+		<action name="pojo" class="io.domshom.struts2.EmployeeAction_Pojo"
+			method="run">
+			<result name="success">views/EmployeeSuccess.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+	</package>
+	
+	
+	<package name="action" namespace="/wildcarddemo" extends="struts-default">
+		<action name="">
+			<result>/views/wildcard/index.jsp</result>
+		</action>
+		
+<!-- 		<action name="getPerson" class="io.domshom.struts2.wildcard.PersonAction">
+			<result name="success">/views/wildcard/success.jsp</result>
+			<result name="failure">/views/wildcard/error.jsp</result>
+		</action>
+		<action name="getEmployee" class="io.domshom.struts2.wildcard.EmployeeAction">
+			<result name="success">/views/wildcard/success.jsp</result>
+			<result name="failure">/views/wildcard/error.jsp</result>
+		</action>
+ -->
+ 		<action name="get*" class="io.domshom.struts2.wildcard.{1}Action">
+			<result name="success">/views/wildcard/success.jsp</result>
+			<result name="failure">/views/wildcard/error.jsp</result>
+		</action>
+ 
+ 	</package>
+	
+	
+</struts>

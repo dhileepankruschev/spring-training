@@ -9,7 +9,7 @@
 <body>
 ${msg}
 <br>
-${m.name }
+${m1.name }
 
 <form method="POST" action="adduser">
 <input type=text name="name" placeholder="Enter name"/>

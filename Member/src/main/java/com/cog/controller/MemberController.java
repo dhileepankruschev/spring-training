@@ -28,10 +28,10 @@ public class MemberController {
 
 	
 	@RequestMapping(value = PATH, method = RequestMethod.POST)
-	  public String addAddress(@ModelAttribute("m") Member member,
+	  public String addAddress(@ModelAttribute("m1") @Valid Member member,
 	      BindingResult result, Model model) {
 
-		
+		result.
 		System.out.println("Member:" + member);
 	    model.addAttribute("member", member);
 	    return "member.jsp";
